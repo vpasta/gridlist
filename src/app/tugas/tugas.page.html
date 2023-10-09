@@ -1,0 +1,94 @@
+<ion-menu contentId="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Oshi Saya</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">Zee oshi saya satu satunya, satunya adel, satunya marsha</ion-content>
+</ion-menu>
+
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar color="primary">
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>Search</ion-title>
+    </ion-toolbar>
+
+    <!-- GRID -->
+    <ion-grid>
+      <ion-row>
+        <ion-searchbar class="searchbar" animated="true" placeholder="Search For Friends"></ion-searchbar>
+      </ion-row>
+    </ion-grid>
+
+  </ion-header>
+  <ion-content class="content">
+
+    <!-- LIST, IMAGE, BUTTON, TOAST -->
+    <ion-list>
+
+      <ion-item>
+        <ion-avatar slot="start">
+          <img src="../../assets/img/shani.jpeg">
+        </ion-avatar>
+        <ion-label>
+          <h2>Shani</h2>
+        </ion-label>
+        <ion-button id="toast1" slot="end" color="primary">Add Friend</ion-button>
+        <ion-toast class="toast" position="middle" trigger="toast1" duration="3000" [buttons]="toastButton"
+          message="Shani Indira Natio"></ion-toast>
+      </ion-item>
+
+      <ion-item>
+        <ion-avatar slot="start">
+          <img src="../../assets/img/zee.jpeg">
+        </ion-avatar>
+        <ion-label>
+          <h2>Azizi</h2>
+        </ion-label>
+        <ion-button id="toast2" slot="end" color="primary">Unfriend</ion-button>
+        <ion-toast class="toast" position="middle" trigger="toast2" duration="3000" [buttons]="toastButton"
+          message="Azizi Shafaa Asadel"></ion-toast>
+      </ion-item>
+
+      <ion-item>
+        <ion-avatar slot="start">
+          <img src="../../assets/img/gracia.jpeg">
+        </ion-avatar>
+        <ion-label>
+          <h2>Gracia</h2>
+        </ion-label>
+        <ion-button id="toast3" slot="end" color="primary">Accept</ion-button>
+        <ion-toast class="toast" position="middle" trigger="toast3" duration="3000" [buttons]="toastButton"
+          message="Shania Gracia Harlan"></ion-toast>
+      </ion-item>
+
+      <ion-item>
+        <ion-avatar slot="start">
+          <img src="../../assets/img/adel.jpeg">
+        </ion-avatar>
+        <ion-label>
+          <h2>Dedel</h2>
+        </ion-label>
+        <ion-button id="toast4" slot="end" color="primary">Unfriend</ion-button>
+        <ion-toast class="toast" position="middle" trigger="toast4" duration="3000" [buttons]="toastButton"
+          message="Reva Fidelia Adel Pantjoro"></ion-toast>
+      </ion-item>
+
+      <ion-item>
+        <ion-avatar slot="start">
+          <img src="../../assets/img/marsha.jpeg">
+        </ion-avatar>
+        <ion-label>
+          <h2>Marsha</h2>
+        </ion-label>
+        <ion-button id="toast5" slot="end" color="primary">Unfriend</ion-button>
+        <ion-toast class="toast" position="middle" trigger="toast5" duration="3000" [buttons]="toastButton"
+          message="Marsha Lenathea Lapian"></ion-toast>
+      </ion-item>
+
+    </ion-list>
+  </ion-content>
+</div>

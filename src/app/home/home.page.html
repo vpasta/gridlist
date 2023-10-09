@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Home
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Home</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <div ng-if="userRole==='admin'">
+      <ion-img src="https://images.unsplash.com/photo-1583638666708-5ba77a6f8bd1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1956&q=80"> </ion-img>
+    </div>
+    <div ng-if="userRole==='superadmin'">
+      <ion-img src="https://images.unsplash.com/photo-1633380170808-9404cd630e82?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80"> </ion-img>
+    </div>
+    <ion-img src="https://docs-demo.ionic.io/assets/madison.jpg"></ion-img>
+    <p> Ini adalah sebuah gedung bernama madison building di wincousin</p>
+    anda adalah {{userRole}}
+  </div>
+
+</ion-content>
